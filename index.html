@@ -903,7 +903,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
           <div class="row gy-4">
 
             <div class="col-md-6">
-              <input type="text" id="name" class="form-control" placeholder="Your Name" required="">
+              <input type="text" id="name"  class="form-control" placeholder="Your Name" required="">
             </div>
 
             <div class="col-md-6 ">
@@ -1076,8 +1076,8 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
       console.log("Values Collected:", { name, email, subject, message }); // Debugging step 2
   
       emailjs.send('service_zq7zkqo', 'template_cznyj5o', {
-          from_name: name,
-          from_email: email,
+          name: name,
+          email: email,
           subject: subject,
           message: message
       }).then(function(response) {
